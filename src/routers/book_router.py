@@ -1,12 +1,10 @@
 from fastapi import APIRouter,status
 from fastapi.exceptions import HTTPException
-from typing import Optional,List
+from typing import List
 from pydantic import BaseModel
-from models.book_data import books
+from ..db.book_data import books
 from datetime import datetime
-print("*"*100)
-print(books)
-print("*"*100)
+
 
 book_router = APIRouter()
 
